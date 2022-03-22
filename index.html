@@ -1,0 +1,583 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1894.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="utf-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content=""&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="author" content=""&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="icon" href="favicon.ico"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;STORE&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="node_modules/video.js/dist/video-js.min.css" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="css/latofonts.css" rel="stylesheet" type="text/css"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="css/latostyle.css" rel="stylesheet" type="text/css"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.navbar-toggler {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index: 1;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width: 800px) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>#carouselExampleIndicators {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Temporary fix for img-fluid sizing within the carousel */</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.carousel-item.active,</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.carousel-item-next,</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.carousel-item-prev {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 11pt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>/*padding-top: 50px;*/</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #868688;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #FAFCFF;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>nav {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>/*background-color: #e7e7e7*/</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(135, 15, 93, 1);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: -moz-linear-gradient(left, rgba(135, 15, 93, 1) 0%, rgba(135, 15, 93, 1) 19%, rgba(63, 41, 133, 1) 55%, rgba(40, 17, 115, 1) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: -webkit-gradient(left top, right top, color-stop(0%, rgba(135, 15, 93, 1)), color-stop(19%, rgba(135, 15, 93, 1)), color-stop(55%, rgba(63, 41, 133, 1)), color-stop(100%, rgba(40, 17, 115, 1)));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: -webkit-linear-gradient(left, rgba(135, 15, 93, 1) 0%, rgba(135, 15, 93, 1) 19%, rgba(63, 41, 133, 1) 55%, rgba(40, 17, 115, 1) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: -o-linear-gradient(left, rgba(135, 15, 93, 1) 0%, rgba(135, 15, 93, 1) 19%, rgba(63, 41, 133, 1) 55%, rgba(40, 17, 115, 1) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: -ms-linear-gradient(left, rgba(135, 15, 93, 1) 0%, rgba(135, 15, 93, 1) 19%, rgba(63, 41, 133, 1) 55%, rgba(40, 17, 115, 1) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(to right, rgba(135, 15, 93, 1) 0%, rgba(135, 15, 93, 1) 19%, rgba(63, 41, 133, 1) 55%, rgba(40, 17, 115, 1) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#870f5d', endColorstr='#281173', GradientType=1);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/*<span class="Apple-converted-space">      </span>.fixed-top{</p>
+<p class="p1"><span class="Apple-converted-space">        </span>position:absolute;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>} */</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>#footc {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding-bottom: 3rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding-top: 3rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>/*background-color: #e7e7e7*/</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(135, 15, 93, 1);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: -moz-linear-gradient(left, rgba(135, 15, 93, 1) 0%, rgba(135, 15, 93, 1) 19%, rgba(63, 41, 133, 1) 55%, rgba(40, 17, 115, 1) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: -webkit-gradient(left top, right top, color-stop(0%, rgba(135, 15, 93, 1)), color-stop(19%, rgba(135, 15, 93, 1)), color-stop(55%, rgba(63, 41, 133, 1)), color-stop(100%, rgba(40, 17, 115, 1)));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: -webkit-linear-gradient(left, rgba(135, 15, 93, 1) 0%, rgba(135, 15, 93, 1) 19%, rgba(63, 41, 133, 1) 55%, rgba(40, 17, 115, 1) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: -o-linear-gradient(left, rgba(135, 15, 93, 1) 0%, rgba(135, 15, 93, 1) 19%, rgba(63, 41, 133, 1) 55%, rgba(40, 17, 115, 1) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: -ms-linear-gradient(left, rgba(135, 15, 93, 1) 0%, rgba(135, 15, 93, 1) 19%, rgba(63, 41, 133, 1) 55%, rgba(40, 17, 115, 1) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(to right, rgba(135, 15, 93, 1) 0%, rgba(135, 15, 93, 1) 19%, rgba(63, 41, 133, 1) 55%, rgba(40, 17, 115, 1) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#870f5d', endColorstr='#281173', GradientType=1);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>#cat {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>/*background-color: #e7e7e7*/</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(135, 15, 93, 1);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: -moz-linear-gradient(left, rgba(135, 15, 93, 1) 0%, rgba(135, 15, 93, 1) 19%, rgba(63, 41, 133, 1) 55%, rgba(40, 17, 115, 1) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: -webkit-gradient(left top, right top, color-stop(0%, rgba(135, 15, 93, 1)), color-stop(19%, rgba(135, 15, 93, 1)), color-stop(55%, rgba(63, 41, 133, 1)), color-stop(100%, rgba(40, 17, 115, 1)));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: -webkit-linear-gradient(left, rgba(135, 15, 93, 1) 0%, rgba(135, 15, 93, 1) 19%, rgba(63, 41, 133, 1) 55%, rgba(40, 17, 115, 1) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: -o-linear-gradient(left, rgba(135, 15, 93, 1) 0%, rgba(135, 15, 93, 1) 19%, rgba(63, 41, 133, 1) 55%, rgba(40, 17, 115, 1) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: -ms-linear-gradient(left, rgba(135, 15, 93, 1) 0%, rgba(135, 15, 93, 1) 19%, rgba(63, 41, 133, 1) 55%, rgba(40, 17, 115, 1) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(to right, rgba(135, 15, 93, 1) 0%, rgba(135, 15, 93, 1) 19%, rgba(63, 41, 133, 1) 55%, rgba(40, 17, 115, 1) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#870f5d', endColorstr='#281173', GradientType=1);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>/*font-family: Lato;*/</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>/*font-style: normal;*/</p>
+<p class="p1"><span class="Apple-converted-space">      </span>/*font-variant: normal;*/</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>nav a {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>/*font-family: Lato;*/</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>/*color: #868688;*/</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>#itemc {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>/*color:white;*/</p>
+<p class="p1"><span class="Apple-converted-space">      </span>/*font-family: Lato;*/</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #666;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>nav a:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #21E8CB;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>#nava {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.navbar-toggle .icon-bar {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #868688;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.starter-template {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 40px 15px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.video-js {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>input {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-width: 450px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>#next2 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>float: right;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.navbar-toggleable-md&gt;.container {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-self: flex-start;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>#carouselExampleIndicators {</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>/*width: 86%;*/</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-left: 2%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>-webkit-box-shadow: 0px 11px 5px -1px rgba(0, 0, 0, 0.31);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>-moz-box-shadow: 0px 11px 5px -1px rgba(0, 0, 0, 0.31);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0px 11px 5px -1px rgba(0, 0, 0, 0.31);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>#contcar {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>left: calc(50% - 400px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>top: 22%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index: 2;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-left: auto !important;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-right: auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center !important;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 800px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.carousel-control-prev {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>left: -10%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.carousel-control-next {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>right: -10%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>#contcont {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 6%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>#article {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 4.7rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-overflow: -o-ellipsis-lastline;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>h2.grrrr {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: table;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>white-space: nowrap;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&amp;:after {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>border-top: 3px solid black;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>content: '';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>display: table-cell;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>top: 0.8em;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width: 30%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&amp;:after {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>left: 1.5%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>h4.grrrr {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>h4.grrrr:after {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>content: "";</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 22%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>top: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-left: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.py-5 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding-bottom: 1rem !important;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding-top: 1rem !important;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>#fotcont {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-left: 10%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.slide-image {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.carousel-holder {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.carousel-control,</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.item {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/*#divcarcont{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-self: flex-end;</p>
+<p class="p1">}*/</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>html,</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow-x: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0px !important;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.navbar-nav {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.navbar-toggleable-md .navbar-nav {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>-moz-box-direction: normal;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>-moz-box-orient: horizontal;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: row;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.ml-auto {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-left: auto !important;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.navbar-collapse {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-basis: 44% !important;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.navbar-brand {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-right: 20rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.navbar-toggleable-md .navbar-nav .nav-link {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding-left: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding-right: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.navbar-toggleable-md .navbar-collapse {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>/*display: contents;*/</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>#narvbarx {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: baseline !important;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- modal --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"</p>
+<p class="p1"><span class="Apple-converted-space">    </span>aria-hidden="true"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="modal-dialog" role="document"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="modal-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="modal-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h5 class="modal-title" id="exampleModalLabel"&gt;New message&lt;/h5&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="modal-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;label for="recipient-name" class="form-control-label"&gt;Contact Email:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;input type="text" class="form-control" id="recipient-email"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;label for="recipient-name" class="form-control-label"&gt;Contact Name:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;input type="text" class="form-control" id="recipient-name"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;label for="message-text" class="form-control-label"&gt;Message:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;textarea class="form-control" id="message-text"&gt;&lt;/textarea&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="modal-footer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;Close&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button type="button" onclick="send()" class="btn btn-primary"&gt;Send message&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- end modal --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- modal SignIn --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel"</p>
+<p class="p1"><span class="Apple-converted-space">    </span>aria-hidden="true"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="modal-dialog" role="document"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="modal-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="modal-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h5 class="modal-title" id="signInModalLabel"&gt;Sign up&lt;/h5&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="modal-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;label for="sign-username" class="form-control-label"&gt;Username:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;input type="text" class="form-control" id="sign-username"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;label for="sign-password" class="form-control-label"&gt;Password:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;input type="password" class="form-control" id="sign-password"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;label id="errors" style="color:red" class="form-control-label"&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="modal-footer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;Close&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button type="button" onClick="register()" class="btn btn-primary"&gt;Sign up&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- end modal --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- modal logIn --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="logInModalLabel"</p>
+<p class="p1"><span class="Apple-converted-space">    </span>aria-hidden="true"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="modal-dialog" role="document"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="modal-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="modal-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h5 class="modal-title" id="logInModalLabel"&gt;Log in&lt;/h5&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="modal-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;label for="log-name" class="form-control-label"&gt;Username:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;input type="text" class="form-control" id="loginusername"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;label for="log-pass" class="form-control-label"&gt;Password:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;input type="password" class="form-control" id="loginpassword"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;label for="log-pass" id="errorl" class="form-control-label"&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="modal-footer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;Close&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button type="button" onClick="logIn()" class="btn btn-primary"&gt;Log in&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- end modal --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- modal video --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="modal fade" id="videoModal" role="dialog"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="modal-dialog"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="modal-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="modal-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h5 class="modal-title" id="videoModalLabel"&gt;About us&lt;/h5&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="modal-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;video poster="imgs/front.jpg" id=example-video width=400 height=320 class="video-js" controls&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/video&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="modal-footer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;Close&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Navigation --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;nav style="height:350px" id="narvbarx" class="navbar navbar-toggleable-md bg-inverse"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a class="navbar-brand" id="nava" href="index.html"&gt;&lt;img width=50 height=50 style="margin-right:10px" src="bm.png"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>PRODUCT STORE&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="navbar-collapse" id="navbarExample"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;ul class="navbar-nav ml-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li class="nav-item active"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a class="nav-link" href="index.html"&gt;Home &lt;span class="sr-only"&gt;(current)&lt;/span&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li class="nav-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="#"&gt;Contact&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li class="nav-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a class="nav-link" data-toggle="modal" data-target="#videoModal" href="#"&gt;About us&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li class="nav-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a class="nav-link" id="cartur" href="cart.html"&gt;Cart&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li class="nav-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a class="nav-link" href="#" id="login2" data-toggle="modal" data-target="#logInModal"&gt;Log in&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li class="nav-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a class="nav-link" href="#" style="display:none" id="logout2" onClick="logOut()"&gt;Log out&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li class="nav-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a class="nav-link" href="#" style="display:none" id="nameofuser"&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li class="nav-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a class="nav-link" href="#" id="signin2" data-toggle="modal" data-target="#signInModal"&gt;Sign up&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="contcar" class="lg-9 md-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;ol class="carousel-indicators"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li data-target="#carouselExampleIndicators" data-slide-to="1"&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li data-target="#carouselExampleIndicators" data-slide-to="2"&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ol&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="carousel-inner"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="carousel-item active"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;img class="d-block img-fluid" src="Samsung1.jpg" alt="First slide"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="carousel-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;img class="d-block img-fluid" src="nexus1.jpg" alt="Second slide"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="carousel-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;img class="d-block img-fluid" src="iphone1.jpg" alt="Third slide"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="sr-only"&gt;Previous&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="sr-only"&gt;Next&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container" id="contcont"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="row"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="col-lg-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="list-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="" class="list-group-item" id="cat"&gt;CATEGORIES&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="#" id="itemc" onClick="byCat('phone')" class="list-group-item"&gt;Phones&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="#" id="itemc" onClick="byCat('notebook')" class="list-group-item"&gt;Laptops&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="#" id="itemc" onClick="byCat('monitor')" class="list-group-item"&gt;Monitors&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="col-lg-9"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- &lt;div class="container"&gt; --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="row" id="tbodyid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;form name="frm" id="frm" style="float: right;" onsubmit="return false"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;!-- &lt;button type="button" id="next2" class="btn btn-success"&gt;Next &gt;&lt;/button&gt; --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul class="pagination"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li class="page-item"&gt;&lt;button class="page-link" id="prev2"&gt;Previous&lt;/button&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li class="page-item"&gt;&lt;button class="page-link" id="next2"&gt;Next&lt;/button&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="node_modules/jquery/dist/jquery.min.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="node_modules/video.js/dist/video.min.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="node_modules/videojs-contrib-hls/dist/videojs-contrib-hls.min.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="node_modules/tether/dist/js/tether.min.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="node_modules/bootstrap/dist/js/bootstrap.min.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script type="text/javascript" src="js/index.js"&gt;&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="footc"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="fotcont" class="row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="col-sm-4 col-lg-4 col-md-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="thumbnail"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="caption"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h4 class="grrrr"&gt;&lt;b&gt;About Us&lt;/b&gt;&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;We believe performance needs to be validated at every stage of the software development cycle and our</p>
+<p class="p1"><span class="Apple-converted-space">              </span>open source compatible, massively scalable platform makes that a reality.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="col-sm-3 col-lg-3 col-md-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="thumbnail"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="caption"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h4 class="grrrr"&gt;&lt;b&gt;Get in Touch&lt;/b&gt;&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Address: 2390 El Camino Real&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Phone: +440 123456&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Email: demo@blazemeter.com &lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="col-sm-4 col-lg-4 col-md-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="thumbnail"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="caption"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h4&gt;&lt;img width=50 height=50 style="margin-right:10px" src="bm.png"&gt; PRODUCT STORE&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer class="py-5 bg-inverse"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="m-0 text-center text-white"&gt;Copyright &amp;copy; Product Store 2017&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
